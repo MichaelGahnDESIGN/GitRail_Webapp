@@ -1,0 +1,33 @@
+name: Flutter Web – Check und Build
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Web scaffold sicherstellen
+        run: flutter create . --platforms web
+      - name: Abhaengigkeiten
+        run: flutter pub get
+      - name: Analyse
+        run: flutter analyze
+      - name: Tests
+        run: flutter test
+      - name: Web-Build
+        run: flutter build web --release
+      - name: Statische Website bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: gitrail-web
+          path: build/web/
+          if-no-files-found: error
