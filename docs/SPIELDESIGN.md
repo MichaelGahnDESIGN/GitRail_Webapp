@@ -29,6 +29,12 @@ Auftrag → Entscheidung → Simulation → Ergebnis → Begriff verstehen → P
 10. Deploy – Bahnhofseröffnung
 11. .gitignore – Die Sperrliste
 
+## Interaktiver Weichen-Prototyp (umgesetzt)
+- Start im Gleisbaulabor, inkl. Weiche per Ziehbewegung oder barriereärmeren Schaltflächen
+- Branch (Abzweigung) → Commit (Speicherpunkt) → Merge (Zusammenführen)
+- Sofortige Statusmeldungen, Neustart und Erklärung der Metapher-Grenzen
+- Es handelt sich um eine **Simulation** ohne echte Git-Operationen
+
 ## MVP – umgesetzt
 - Deutsches Flutter-Interface mit responsive-zentriertem Layout
 - Visualisierte Gleisstrecke als Flutter-CustomPainter
@@ -39,7 +45,7 @@ Auftrag → Entscheidung → Simulation → Ergebnis → Begriff verstehen → P
 
 ## Roadmap
 ### V0.2 – didaktische Gleisbau-Simulation
-Züge / Weichen direkt bedienen, Commit-Punkte platzieren, Branch erstellen, Merge-Konflikte sichtbar lösen; erklärende Git-Kommandos.
+Erster Weichen-Prototyp umgesetzt. Nächste Schritte: freie Gleisplatzierung, mehrere Züge, Merge-Konflikte sichtbar lösen; erklärende Git-Kommandos.
 ### V0.3 – Langzeitmotivation
 Lokal gespeicherter Fortschritt, Kapitelkarte, Sterne, Erfolge, mehrere Schwierigkeitsgrade.
 ### V0.4 – Team-Modus als Simulation
