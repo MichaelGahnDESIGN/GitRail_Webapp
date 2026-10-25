@@ -9,6 +9,15 @@
   <a href="https://michael-gahn.de"><img alt="Michael Gahn DESIGN" src="https://img.shields.io/badge/by-Michael%20Gahn%20DESIGN-cd1616"></a>
 </p>
 
+<p align="center">
+  <a href="https://michaelgahndesign.github.io/GitRail_Webapp/"><strong>🚂 ▶ GitRail – DEMO IM BROWSER STARTEN</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/MichaelGahnDESIGN/GitRail_Webapp/actions/workflows/pages.yml">Demo-Build prüfen</a>
+</p>
+
+> [!IMPORTANT]
+> **Demo-Freischaltung:** In **Settings → Pages → Build and deployment → Source** muss **GitHub Actions** gewählt sein. Danach den Workflow **GitRail – Browser-Vorschau (GitHub Pages)** unter **Actions** erneut starten. Bis zur erfolgreichen Veröffentlichung öffnet der Demo-Link noch nicht das Spiel.
+
 # 🚂 GitRail – Git lernen auf Schienen
 
 > **Branches sind Abzweigungen. Commits sind Speicherpunkte. Merges verbinden Entwicklungsstände.**
