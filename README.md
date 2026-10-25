@@ -33,12 +33,12 @@ Wer Websites programmiert, versteht Header, CSS und Deployments – aber Git-Beg
 | Mobile-freundliche Oberfläche | ✅ Grundlayout |
 | Automatischer Web-Build über GitHub Actions | ✅ Konfiguriert, Build-Status prüfen |
 | Fortschritt nach Seiten-Neuladen speichern | 🗓️ Geplant |
-| Interaktive Weichen-/Schienenbau-Simulation | 🗓️ Geplant |
+| Interaktiver Gleisbau: Branch → Commit → Merge | ✅ Erster Prototyp (Drag + Buttons) |
 | Multiplayer / KI-Agent-Simulation | 🗓️ Geplant |
 | Echte Git-Operationen | ❌ Nicht vorgesehen für die erste Version |
 
 > [!NOTE]
-> Dies ist eine erste **Quiz- und Visualisierungs-Version**, noch kein vollständiges Eisenbahn-Aufbauspiel. Die Gleise werden aktuell illustriert; das freie Platzieren von Gleisen und Weichen folgt in einer späteren Version.
+> Dies ist ein **erster interaktiver Gleisbau-Prototyp** mit Weiche, Branch, Commit und Merge sowie elf Quiz-Missionen. Vollständig frei platzierbare Gleise, Mehrzugverkehr und echte Konfliktszenarien folgen später.
 
 ## 🚉 Lernstationen
 
@@ -96,7 +96,8 @@ GitRail_Webapp/
 │   ├── banner.svg
 │   └── rail-workflow.svg
 ├── lib/
-│   └── main.dart                # Spielprototyp
+│   ├── main.dart                # Spielprototyp
+│   └── rail_lab.dart            # Interaktiver Gleisbau
 ├── test/
 │   └── widget_test.dart         # UI-Grundtest
 ├── web/
@@ -134,7 +135,7 @@ Ein separates GitHub-Wiki benötigt eine eigene Wiki-Verwaltung. Die Dokumentati
 
 ## 🛣️ Roadmap
 
-**v0.2:** Echte interaktive Gleis-/Weichenbedienung und Git-Simulation.  
+**v0.2:** Interaktiver Weichen-Prototyp vorhanden; als nächstes frei verlegbare Gleise, mehrere Züge und Konfliktsimulation.  
 **v0.3:** Lokaler Spielstand, Kapitelkarte, Auszeichnungen.  
 **v0.4:** Zwei Bautrupps / KI-Agents und Worktree-Konflikte.  
 **v1.0:** Umfangreiche Kampagne, Accessibility-Prüfung, deutsch-/englischsprachig und PWA-Ausbau.
