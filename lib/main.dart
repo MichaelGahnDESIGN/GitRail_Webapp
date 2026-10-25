@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'rail_lab.dart';
 
 void main() => runApp(const GitRailApp());
 
@@ -95,6 +96,7 @@ class _RailHomeState extends State<RailHome> {
   int score = 0;
   final Set<int> completed = {};
   bool glossary = false;
+  bool railLab = true;
 
   void checkAnswer() {
     if (selected == null || checked) return;
@@ -136,7 +138,13 @@ class _RailHomeState extends State<RailHome> {
                     Text('⭐ $score XP', style: const TextStyle(color: amber, fontWeight: FontWeight.bold)),
                     const SizedBox(width: 14),
                     TextButton.icon(
-                      onPressed: () => setState(() => glossary = !glossary),
+                      onPressed: () => setState(() { railLab = !railLab; glossary = false; }),
+                      icon: Icon(railLab ? Icons.quiz_outlined : Icons.alt_route),
+                      label: Text(railLab ? 'Missionen' : 'Gleisbau'),
+                    ),
+                    const SizedBox(width: 6),
+                    TextButton.icon(
+                      onPressed: () => setState(() { glossary = !glossary; railLab = false; }),
                       icon: Icon(glossary ? Icons.route : Icons.menu_book),
                       label: Text(glossary ? 'Spiel' : 'Glossar'),
                     ),
@@ -147,7 +155,7 @@ class _RailHomeState extends State<RailHome> {
                     color: mint, borderRadius: BorderRadius.circular(10)),
                   const SizedBox(height: 18),
                   Expanded(child: SingleChildScrollView(
-                    child: glossary ? _glossary() : Column(
+                    child: railLab ? const RailLab() : glossary ? _glossary() : Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         _routeCard(),
