@@ -5,9 +5,13 @@ void main() {
   testWidgets('Gleisbau startet und Branch lässt sich anlegen', (tester) async {
     await tester.pumpWidget(const GitRailApp());
     expect(find.text('Baue deinen ersten Branch'), findsOneWidget);
+    await tester.ensureVisible(find.text('1. Branch (Abzweigung)'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('1. Branch (Abzweigung)'));
     await tester.pump();
     expect(find.textContaining('Dein Branch (Abzweigung)'), findsOneWidget);
+    await tester.ensureVisible(find.text('2. Commit (Speicherpunkt)'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('2. Commit (Speicherpunkt)'));
     await tester.pump();
     expect(find.textContaining('Commit (Speicherpunkt) gesetzt'), findsOneWidget);
