@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260" role="img" aria-label="GitRail Gleisplan: main, Branch, Commit, Merge und Deploy">
+<rect width="1100" height="260" rx="18" fill="#101e30"/>
+<path d="M65 170H1040" stroke="#86a8b6" stroke-width="10" stroke-linecap="round"/>
+<path d="M235 170Q285 170 335 85H660Q725 85 765 170" stroke="#ffbe65" stroke-width="10" fill="none" stroke-linecap="round"/>
+<g font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle">
+<g fill="#49d8ba"><circle cx="100" cy="170" r="15"/><circle cx="325" cy="85" r="15"/><circle cx="560" cy="85" r="15"/><circle cx="840" cy="170" r="15"/><circle cx="1000" cy="170" r="15"/></g>
+<g fill="#fff" font-size="20"><text x="100" y="215">main</text><text x="325" y="50">Branch</text><text x="560" y="50">Commit</text><text x="840" y="215">Merge</text><text x="1000" y="215">Deploy</text></g>
+<g fill="#bfd5dc" font-size="13"><text x="100" y="234">Hauptstrecke</text><text x="325" y="68">Abzweig</text><text x="560" y="68">Speicherpunkt</text><text x="840" y="234">Zusammenführen</text><text x="1000" y="234">Live schalten</text></g>
+</g></svg>
