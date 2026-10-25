@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-label="GitRail – Git lernen auf Schienen">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e30"/><stop offset="1" stop-color="#205368"/></linearGradient><linearGradient id="tr" x2="1"><stop stop-color="#49d8ba"/><stop offset="1" stop-color="#bfffe8"/></linearGradient></defs>
+<rect width="1200" height="350" rx="24" fill="url(#bg)"/>
+<g stroke="#ffffff" opacity=".09" stroke-width="2"><path d="M0 75H1200M0 155H1200M0 235H1200M0 315H1200M90 0V350M260 0V350M430 0V350M600 0V350M770 0V350M940 0V350M1110 0V350"/></g>
+<g fill="none" stroke-linecap="round"><path d="M80 265H1120" stroke="#ffffff" stroke-width="12" opacity=".25"/><path d="M80 265H1120" stroke="#49d8ba" stroke-width="4" stroke-dasharray="18 15"/><path d="M450 265Q530 265 600 170T770 110H1120" stroke="#ffbe65" stroke-width="11" opacity=".8"/></g>
+<g transform="translate(840 130)"><rect x="0" y="0" width="210" height="100" rx="24" fill="url(#tr)"/><rect x="25" y="20" width="70" height="42" rx="9" fill="#123147"/><rect x="116" y="20" width="70" height="42" rx="9" fill="#123147"/><circle cx="43" cy="100" r="19" fill="#132b3f" stroke="#ffffff" stroke-width="5"/><circle cx="166" cy="100" r="19" fill="#132b3f" stroke="#ffffff" stroke-width="5"/></g>
+<text x="80" y="125" font-family="Arial,sans-serif" font-size="89" font-weight="900" fill="#ffffff">Git<tspan fill="#49d8ba">Rail</tspan></text>
+<text x="83" y="177" font-family="Arial,sans-serif" font-size="27" font-weight="600" fill="#e8f4f6">GIT &amp; GITHUB SPIELERISCH VERSTEHEN</text>
+<text x="83" y="217" font-family="Arial,sans-serif" font-size="20" fill="#c8dbe3">Branches sind Abzweige. Merge verbindet Gleise.</text>
+</svg>
